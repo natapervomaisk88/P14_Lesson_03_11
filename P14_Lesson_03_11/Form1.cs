@@ -57,5 +57,11 @@ namespace P14_Lesson_03_11
             ProgressForm prForm = new ProgressForm();
             prForm.ShowDialog();
         }
+
+        private void BtnFlyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ButtonFlyForm bff = new ButtonFlyForm();
+            bff.ShowDialog();
+        }
     }
 }

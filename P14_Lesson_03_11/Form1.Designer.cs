@@ -39,6 +39,7 @@
             leftPanel1 = new Panel();
             richTextBox1 = new RichTextBox();
             openFileDialog1 = new OpenFileDialog();
+            BtnFlyToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             leftPanel1.SuspendLayout();
             SuspendLayout();
@@ -54,7 +55,7 @@
             // 
             // fileToolStripMenuItem
             // 
-            fileToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { closeToolStripMenuItem, readToolStripMenuItem, newFormToolStripMenuItem });
+            fileToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { closeToolStripMenuItem, readToolStripMenuItem, newFormToolStripMenuItem, BtnFlyToolStripMenuItem });
             fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             fileToolStripMenuItem.Size = new Size(48, 20);
             fileToolStripMenuItem.Text = "Файл";
@@ -118,6 +119,13 @@
             // 
             openFileDialog1.FileName = "openFileDialog1";
             // 
+            // BtnFlyToolStripMenuItem
+            // 
+            BtnFlyToolStripMenuItem.Name = "BtnFlyToolStripMenuItem";
+            BtnFlyToolStripMenuItem.Size = new Size(180, 22);
+            BtnFlyToolStripMenuItem.Text = "Летающая кнопка";
+            BtnFlyToolStripMenuItem.Click += BtnFlyToolStripMenuItem_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -148,5 +156,6 @@
         private RichTextBox richTextBox1;
         private OpenFileDialog openFileDialog1;
         private ToolStripMenuItem newFormToolStripMenuItem;
+        private ToolStripMenuItem BtnFlyToolStripMenuItem;
     }
 }
