@@ -21,6 +21,12 @@ namespace P14_Lesson_03_11
             {
                 richTextBox1.Text = string.Empty;
             };
+            ToolTip tt = new ToolTip();
+            tt.ToolTipTitle = "Attention";
+            tt.ShowAlways = true;
+            tt.SetToolTip(btn, "Clear all");
+            tt.ToolTipIcon = ToolTipIcon.Error;
+            tt.IsBalloon = true;
             pn.Controls.Add(btn);
         }
 
@@ -48,8 +54,8 @@ namespace P14_Lesson_03_11
 
         private void newFormToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form2 frm = new Form2();
-            frm.ShowDialog();
+            ProgressForm prForm = new ProgressForm();
+            prForm.ShowDialog();
         }
     }
 }
