@@ -32,6 +32,7 @@
             fileToolStripMenuItem = new ToolStripMenuItem();
             closeToolStripMenuItem = new ToolStripMenuItem();
             readToolStripMenuItem = new ToolStripMenuItem();
+            newFormToolStripMenuItem = new ToolStripMenuItem();
             настройкиToolStripMenuItem = new ToolStripMenuItem();
             changeThemaToolStripMenuItem = new ToolStripMenuItem();
             colorDialog1 = new ColorDialog();
@@ -53,7 +54,7 @@
             // 
             // fileToolStripMenuItem
             // 
-            fileToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { closeToolStripMenuItem, readToolStripMenuItem });
+            fileToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { closeToolStripMenuItem, readToolStripMenuItem, newFormToolStripMenuItem });
             fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             fileToolStripMenuItem.Size = new Size(48, 20);
             fileToolStripMenuItem.Text = "Файл";
@@ -71,6 +72,13 @@
             readToolStripMenuItem.Size = new Size(180, 22);
             readToolStripMenuItem.Text = "Прочитать";
             readToolStripMenuItem.Click += readToolStripMenuItem_Click;
+            // 
+            // newFormToolStripMenuItem
+            // 
+            newFormToolStripMenuItem.Name = "newFormToolStripMenuItem";
+            newFormToolStripMenuItem.Size = new Size(180, 22);
+            newFormToolStripMenuItem.Text = "Новая форма";
+            newFormToolStripMenuItem.Click += newFormToolStripMenuItem_Click;
             // 
             // настройкиToolStripMenuItem
             // 
@@ -139,5 +147,6 @@
         private Panel leftPanel1;
         private RichTextBox richTextBox1;
         private OpenFileDialog openFileDialog1;
+        private ToolStripMenuItem newFormToolStripMenuItem;
     }
 }

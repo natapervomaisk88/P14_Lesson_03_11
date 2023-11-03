@@ -1,3 +1,5 @@
+using System.Net.Http.Headers;
+
 namespace P14_Lesson_03_11
 {
     public partial class Form1 : Form
@@ -37,11 +39,17 @@ namespace P14_Lesson_03_11
         {
             openFileDialog1.ShowDialog();
             string pathToFile = openFileDialog1.FileName;
-            if(pathToFile!=null)
+            if (pathToFile != null)
             {
                 string content = File.ReadAllText(pathToFile);
-                richTextBox1.Text = content;    
+                richTextBox1.Text = content;
             }
+        }
+
+        private void newFormToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form2 frm = new Form2();
+            frm.ShowDialog();
         }
     }
 }
