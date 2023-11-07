@@ -31,6 +31,9 @@
             button1 = new Button();
             textBox1 = new TextBox();
             button2 = new Button();
+            menuStrip1 = new MenuStrip();
+            booksToolStripMenuItem = new ToolStripMenuItem();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // button1
@@ -60,6 +63,22 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // menuStrip1
+            // 
+            menuStrip1.Items.AddRange(new ToolStripItem[] { booksToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(800, 24);
+            menuStrip1.TabIndex = 3;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // booksToolStripMenuItem
+            // 
+            booksToolStripMenuItem.Name = "booksToolStripMenuItem";
+            booksToolStripMenuItem.Size = new Size(51, 20);
+            booksToolStripMenuItem.Text = "Books";
+            booksToolStripMenuItem.Click += booksToolStripMenuItem_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -68,10 +87,14 @@
             Controls.Add(button2);
             Controls.Add(textBox1);
             Controls.Add(button1);
+            Controls.Add(menuStrip1);
             KeyPreview = true;
+            MainMenuStrip = menuStrip1;
             Name = "Form1";
             Text = "MainForm";
             KeyDown += Form1_KeyDown;
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -81,5 +104,7 @@
         private Button button1;
         private TextBox textBox1;
         private Button button2;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem booksToolStripMenuItem;
     }
 }
