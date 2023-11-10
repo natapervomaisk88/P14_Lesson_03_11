@@ -5,7 +5,6 @@ namespace Lesson_10_11
 {
     public partial class MainForm : Form
     {
-        private decimal _totalPay = 0m;
         List<Category> category;
         List<Product> products;
         public MainForm()
@@ -45,11 +44,10 @@ namespace Lesson_10_11
                 foreach (var el in selectedProducts)
                 {
                     listBoxCart.Items.Add(el);
-                    _totalPay += el.Price;
+
                 }
                 textBoxTotalPay.Text = listBoxCart.Items.OfType<Product>().Sum(e => e.Price).ToString();
-                //textBoxTotalPay.Text = _totalPay.ToString();
-                //listBoxCart.Items.AddRange(selectedProducts);
+                textBoxCount.Text = listBoxCart.Items.Count.ToString();
             }
 
         }

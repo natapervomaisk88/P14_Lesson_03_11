@@ -15,7 +15,8 @@ namespace Lesson_10_11.Models
         public Category? Category { get; set; }
         public override string ToString()
         {
-            return $"Name {Name}. Price {Price} ";
+            return $"{Name} | {Price} ";
+
         }
     }
 }
