@@ -48,35 +48,63 @@ namespace Lesson_10_11.Models
             list.Add(new Product()
             {
                 Name = "Гарри Поттер",
-                Price = 778.4m,
+                Price = 100m,
                 Quantity = 17,
                 Category = category.Where(e => e.Name.Equals("Книги")).First()
             });
             list.Add(new Product()
             {
                 Name = "MacBook",
-                Price = 77834.4m,
+                Price = 70000m,
                 Quantity = 10,
                 Category = category.Where(e => e.Name.Equals("Ноутбуки")).First()
             });
             list.Add(new Product()
             {
                 Name = "LG",
-                Price = 17834.4m,
+                Price = 17000m,
                 Quantity = 100,
                 Category = category.Where(e => e.Name.Equals("Смартфоны")).First()
             });
             list.Add(new Product()
             {
                 Name = "Ножницы",
-                Price = 45.4m,
+                Price = 56m,
                 Quantity = 67,
                 Category = category.Where(e => e.Name.Equals("Канцтовары")).First()
             });
             list.Add(new Product()
             {
+                Name = "Ergo",
+                Price = 1000m,
+                Quantity = 100,
+                Category = category.Where(e => e.Name.Equals("Смартфоны")).First()
+            });
+            list.Add(new Product()
+            {
                 Name = "Nokia",
-                Price = 17834.4m,
+                Price = 45m,
+                Quantity = 100,
+                Category = category.Where(e => e.Name.Equals("Смартфоны")).First()
+            });
+            list.Add(new Product()
+            {
+                Name = "Motorola",
+                Price = 23m,
+                Quantity = 100,
+                Category = category.Where(e => e.Name.Equals("Смартфоны")).First()
+            });
+            list.Add(new Product()
+            {
+                Name = "IPhone",
+                Price = 23m,
+                Quantity = 100,
+                Category = category.Where(e => e.Name.Equals("Смартфоны")).First()
+            });
+            list.Add(new Product()
+            {
+                Name = "Xiaomi",
+                Price = 65m,
                 Quantity = 100,
                 Category = category.Where(e => e.Name.Equals("Смартфоны")).First()
             });
