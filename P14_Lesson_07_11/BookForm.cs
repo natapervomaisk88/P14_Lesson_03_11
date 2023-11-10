@@ -26,16 +26,22 @@ namespace P14_Lesson_07_11
             list.Add(new Book("b6", "a6", 2014));
             list.Add(new Book("b7", "a7", 2010));
             DataTable dt = new DataTable();
-            dt.Columns.Add("Идентификатор",typeof(string));
+            dt.Columns.Add("Идентификатор", typeof(string));
             dt.Columns.Add("Название", typeof(string));
             dt.Columns.Add("Автор", typeof(string));
             dt.Columns.Add("Год", typeof(int));
-            foreach(var book in list)
+            foreach (var book in list)
             {
                 dt.Rows.Add(book.Id, book.Title, book.Author, book.Year);
             }
             dataGridView1.DataSource = dt;
+            button1.ContextMenuStrip = contextMenuStrip1;
             //dataGridView1.DataSource = list;
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Clicked Open");
         }
     }
 }
