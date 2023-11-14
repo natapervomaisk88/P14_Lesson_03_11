@@ -12,7 +12,7 @@ namespace Lesson_10_11.Models
         public string? Name { get; set; }
         public decimal Price { get; set; }
         public int Quantity { get; set; }
-        public Category? Category { get; set; }
+        public string? IdCategory { get; set; }
         public override string ToString()
         {
             return $"{Name} | {Price} ";
